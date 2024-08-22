@@ -1,3 +1,5 @@
+'use strict';
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -27,7 +29,7 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const newGallery = images.map((image) => `<li class="item"><img src="${image.url}" alt="${image.alt}" width="360" height="300"/></li>`)
+const newGallery = images.map((image) => `<li class="item-img"><img src="${image.url}" alt="${image.alt}" width="360" height="300"/></li>`)
   .join("");
 
 gallery.insertAdjacentHTML("afterbegin", newGallery);
